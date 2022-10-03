@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="GuessStyle.css">
+    <script src="GuessTheNumber.js"></script>
+    <script> onStart();</script>
+    <title>Guess The Number</title>
+
+</head>
+<div id="content"></div>
+
+<body onLoad="start()">
+    <h1>Is this your number?: <br> <span id="guess"></span></h1>
+
+    <div id="no">
+        <button onclick="higher();">Higher</button>
+        <button onclick="lower();">Lower</button>
+    </div>
+    <hr>
+    <div id="yes">
+        <button onclick="finished();">Yes!</button>
+    </div>
+    <h2>Count: <span id="count">0</span></h2>
+
+
+</body>
+</div>
+
+</html>

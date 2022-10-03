@@ -1,0 +1,24 @@
+* {
+    font-family: sans-serif;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+#yes button {
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+}
+
+#no button {
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+}
