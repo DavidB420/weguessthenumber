@@ -22,9 +22,10 @@ function higher() {
     current /= 2;
     count++;
 
-    // randomly adds or subtracts 1;
-    var random = Math.random() < 0.5 ? -1 : 1;
-    guessNumber += random;
+    if(current > 1){
+        var random = Math.random() < 0.5 ? -1 : 1; // randomly adds or subtracts 1;
+        guessNumber += random;
+    }
 
 
 
@@ -38,14 +39,19 @@ function lower() {
     if (current < 1) {
         current = 1;
     }
-    guessNumber -= current;
-    // randomly adds or subtracts 1;
-    var random = Math.random() < 0.5 ? -1 : 1;
-    guessNumber += random;
+    guessNumber -= current; 
+
+    if(current > 1){
+        var random = Math.random() < 0.5 ? -1 : 1; // randomly adds or subtracts 1;
+        guessNumber += random;
+    }
+    
+
     current /= 2;
     count++;
     document.getElementById('count').innerHTML = count;
     document.getElementById('guess').innerHTML = Math.round(guessNumber);
+    
 }
 function onStart() {
     guessNumber = parseInt(window.prompt("Enter the highest Number in range 0-guessNumber", ""));
