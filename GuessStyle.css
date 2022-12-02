@@ -1,5 +1,9 @@
 * {
-    font-family: sans-serif;
+    font-family: "Comic Sans MS", "Comic Sans", "Arial";
+}
+
+body{
+	background-color: lightblue;
 }
 
 h1,
@@ -9,6 +13,9 @@ h2 {
 
 div {
     text-align: center;
+}
+button{
+background-color: beige;
 }
 
 #yes button {
