@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="GuessStyle.css">
-    <script src="GuessTheNumber.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">google.load('visualization', '1.0', { 'packages': ['corechart'] });</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="GuessNumClient.js"></script>
     <script> onStart();</script>
+
+
     <title>Guess The Number</title>
 
 </head>
@@ -23,8 +28,10 @@
     <hr>
     <div id="yes">
         <button onclick="finished();">Yes!</button>
+        <span id="buttonAppear"></span>
     </div>
     <h2>Count: <span id="count">0</span></h2>
+    <div id="curve_chart"></div>
 
 
 </body>
