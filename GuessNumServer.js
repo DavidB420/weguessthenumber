@@ -84,3 +84,11 @@ function lower(guessNumber) {
     numbers.push(Math.round(guessNumber));
     return Math.round(guessNumber);
 }
+
+// // for testing
+function res(cur) {
+    current = cur;
+    numbers = [];
+    count = 0;
+    console.log("Reset");
+}
