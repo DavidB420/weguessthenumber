@@ -1,24 +1,76 @@
-* {
+body {
     font-family: sans-serif;
+    text-align: center;
+    background-color: #f1f1f1;
 }
 
-h1,
+
+#title {
+    font-size: 2em;
+    color: #333;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+hr {
+    width: 50%;
+    margin: 20px auto;
+    border: none;
+    border-bottom: 2px solid #333;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-top: 20px;
+}
+
+#guess {
+    font-size: 4em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#no {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#yes {
+    display: inline-block;
+}
+
 h2 {
-    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
 }
 
-div {
-    text-align: center;
-}
-
-#yes button {
-    width: 100px;
-    height: 50px;
-    font-weight: bold;
-}
-
-#no button {
-    width: 100px;
-    height: 50px;
-    font-weight: bold;
+#curve_chart {
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
